@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macmatec/official-website.git"
+  },
+  "author": "Ted Thie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macmatec/official-website/issues"
+  },
+  "homepage": "https://github.com/Macmatec/official-website#readme",
+  "dependencies": {
+    "parcel": "^2.7.0",
+    "sass": "^1.55.0"
+  }
+}
