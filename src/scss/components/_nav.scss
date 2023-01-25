@@ -1,0 +1,8 @@
+@use '../abstracts/colors' as col;
+
+$nav-height: 70px;
+
+.navigation {
+    height: $nav-height;
+    background: col.$bg-color;
+}

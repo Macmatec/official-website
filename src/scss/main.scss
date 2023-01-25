@@ -1,0 +1,174 @@
+@use 'abstracts/fonts' as fon;
+@use 'base/base' as base;
+@use 'components/buttons' as btn;
+@use 'components/cards' as cards;
+@use 'components/mouse-scroll' as ms;
+
+body {
+    height: 100vh;
+    background: #1A1D20;
+}
+
+.wrapper {
+    margin: 1rem 5rem;
+}
+
+.nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+        a img {
+            width: 250px;
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: #FFF;
+
+        li {
+            margin-right: 40px;
+
+            .skew-button {
+                top: 40px;
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 4rem;
+}
+
+
+.hero {
+
+    &-tag,
+    &-headline {
+        margin-bottom: 4rem;
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        opacity: 0;
+        transform: translateY(100px);
+        text-align: center;
+        color: white;
+    }
+
+    &-tag {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+
+    &-mouse {
+        display: grid;
+        place-items: center;
+        -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+.about {
+    display: flex;
+
+    .card {
+        margin-right: 20px;
+    }
+}
+
+.services {
+    margin-top: 12rem;
+
+    &-title {
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 400;
+        color: #FFF;
+        margin-bottom: 1.5rem;
+    }
+
+    .service {
+        margin-bottom: 10rem;
+
+        &-title {
+            font-size: 1.4rem;
+            color: #FFF;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        &-text {
+            color: #697887;
+        }
+
+        &-cards {
+            display: flex;
+            flex-basis: 1;
+
+            .card {
+                margin-right: 20px;
+
+                &-title {
+                    font-size: 1.2rem;
+                }
+
+                &-desc {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    opacity: 0;
+    background: linear-gradient(90deg, rgba(255, 227, 91, 1) 0%, rgba(0, 255, 255, 1) 100%);
+    padding: 2em 1em;
+    color: #1A1A1A;
+    font-weight: bold;
+    margin-top: 11em !important;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1;
+
+    &-company {
+        display: flex;
+        justify-content: center;
+
+        .angle-line {
+            margin-top: 1.2em;
+        }
+
+        .all {
+            margin: .3em 0 0 .5em;
+            font-size: 2rem;
+        }
+    }
+
+    &-contact {
+        display: flex;
+    }
+
+    .twitter {
+        width: 2em;
+        margin-left: .5em;
+    }
+
+    .social {
+        margin-top: 2em;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+}
