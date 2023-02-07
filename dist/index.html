@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/favicon.277a906c.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="scrollable">
     <div class="wrapper">
         <header>
             <nav class="nav">
@@ -18,20 +18,24 @@
                     <a href=""><img src="/Logo.866a06a9.svg" alt=""></a>
                 </div>
                 <ul class="nav-list">
-                    <li>Projects</li>
-                    <li>Careers</li>
-                    <li><button class="skew-button"><span>Contact Us</span></button></li>
+                    <a href="/projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="/career.html">
+                        <li>Careers</li>
+                    </a>
+                    <li><button class="skew-button" onclick="scrollToEnd()"><span>Contact Us</span></button></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="hero">
-                <h3 class="hero-tag">
-                    This is Macmatec
-                </h3>
-                <h1 class="hero-headline">
-                    Leading Your Business To the Forefront Of technology
-                </h1>
+                <div class="row">
+                    <img src="/hero.7104da04.svg" class="animated" alt="">
+                    <h1 class="hero-headline">
+                        Leading Your Business To the Forefront Of technology
+                    </h1>
+                </div>
                 <div class="hero-mouse">
                     <div class="mousey">
                         <div class="scroller"></div>
@@ -59,115 +63,283 @@
                 </div>
             </section>
             <section class="services">
-                <div class="services-title">Our Services</div>
-                <div class="service">
-                    <h3 class="service-title">
-                        Product Design
-                    </h3>
-                    <p class="service-text">
-                        At Macmatec, our team of product designers work closely with clients to understand their
-                        business objectives and user needs, and use this insight to design products that are not only
-                        visually compelling, but also easy to use and navigate. Our Product Design services include:
-                    </p>
-                    <div class="service-cards">
-                        <div class="card">
-                            <p class="card-title">User research and insights:</p>
-                            <p class="card-desc">
-                                We conduct user research to gather data on how people interact with products, and use
-                                this information to inform our design decisions.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <p class="card-title">Interaction design:</p>
-                            <p class="card-desc">
-                                We design the user flow, navigation, and overall experience of your product, ensuring
-                                that it is intuitive and easy to use.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <p class="card-title">Visual design:</p>
-                            <p class="card-desc">
-                                We create beautiful, engaging, and on-brand visual designs for your product, including
-                                wireframes, mockups, and high-fidelity prototypes.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <p class="card-title">Usability testing:</p>
-                            <p class="card-desc">
-                                We test your product with real users to identify any issues and make improvements before
-                                launch.
-                            </p>
-                        </div>
+                <div class="services-title">What we can offer you</div>
+                <div class="service-cards">
+                    <div class="card">
+                        <img src="/user-experience.64907fbe.png" alt="">
+
+                        <p class="card-title">
+                            User research and insights
+                        </p>
+                        <p class="card-desc">
+                            We conduct user research to gather data on how people interact with products, and use
+                            this information to inform our design decisions.
+                        </p>
                     </div>
 
+                    <div class="card">
+
+                        <img src="/interactive.bb1c6442.png" alt="">
+                        <div class="card-title">
+                            Interaction design
+                        </div>
+                        <p class="card-desc">
+                            We design the user flow, navigation, and overall experience of your product, ensuring
+                            that it is intuitive and easy to use.
+                        </p>
+                    </div>
+
+                    <div class="card">
+
+                        <img src="/graphic-design-software.68212b67.png" alt="">
+                        <p class="card-title">Visual design</p>
+                        <p class="card-desc">
+                            We create beautiful, engaging, and on-brand visual designs for your product, including
+                            wireframes, mockups, and high-fidelity prototypes.
+                        </p>
+                    </div>
+                    
                 </div>
+
+                
+                
+            </section>
+            <br>
+            <section class="services">
                 <div class="service">
-                    <h3 class="service-title">
+                    <div class="row">
+                        <img src="/Software%20engineer-amico.f34e68ec.svg" alt="" class="float glow" width="400">
+                    <h1 class="service-title">
                         Software Engineering
-                    </h3>
+                    </h1>
+                    </div>
                     <p class="service-text">
                         Our software engineers have the technical expertise to turn your product ideas into reality. We
                         specialize in creating high-quality, reliable and scalable software that helps businesses
-                        achieve their goals. Our Software Engineering services include:
+                        achieve their goals. Our Software Engineering services include
                     </p>
                     <div class="service-cards">
-                        <div class="card">
-                            <p class="card-title">Software Development</p>
+                        <div class="cardy">
+                            <div class="row">
+                                <img src="/app-development.b7849bd3.png" alt="" width="80">
+                                <p class="card-title">Software Development</p>
+                            </div>
                             <p class="card-desc">
                                 We build custom software applications that can be tailored to your specific needs,
                                 whether it's a web, mobile, or desktop application.
                             </p>
                         </div>
-                        <div class="card">
-                            <p class="card-title">Cloud infrastructure:</p>
+                        <div class="cardy">
+                            <div class="row">
+                                <img src="/infrastructure.68827480.png" alt="" width="80">
+                                <p class="card-title">Cloud infrastructure</p>
+                            </div>
                             <p class="card-desc">
                                 We design and build robust, scalable and secure cloud infrastructure to ensure your
                                 product is ready for growth.
-
+                
                             </p>
                         </div>
-                        <div class="card">
-                            <p class="card-title">Quality assurance and testing:</p>
+                        <div class="cardy">
+                            <div class="row">
+                                <img src="/tester.1b0dbef4.png" alt="" width="80">
+                                <p class="card-title">Quality assurance and testing</p>
+                            </div>
                             <p class="card-desc">
                                 We use different testing methodologies to ensure that your product is stable, reliable,
                                 and performant before launch.
                             </p>
                         </div>
-                        <div class="card">
-                            <p class="card-title">Maintenance and Support:</p>
+                        <div class="cardy">
+                            <div class="row">
+                                <img src="/support.a34b01f5.png" alt="" width="80">
+                                <p class="card-title">Maintenance and Support</p>
+                            </div>
                             <p class="card-desc">
                                 We provide ongoing maintenance and support, to ensure that your product is always
                                 up-to-date and running smoothly.
                             </p>
                         </div>
                     </div>
-
+                
                 </div>
             </section>
+
+
+
+            <br>
+
+
+            <section class="services">
+                <div class="service">
+                    <div class="row">
+                        <img src="/remote-team-animate%20(1).5d05b4c2.svg" alt="" width="400">
+                    <h1 class="service-title">
+                        Remote first team
+                    </h1>
+                    </div>
+                    <p class="service-text">
+                        We are a remote first team, which means that we can work with you regardless of your location.
+                        We have a team of highly skilled and experienced software engineers, designers, and project
+                        managers who are ready to help you bring your product ideas to life.
+                    </p>
+                
+                </div>
+            </section>
+
+
+            <section class="services">
+                <div class="service">
+                    <div class="row">
+                        <img src="/working-remotely-animate.1946c4b8.svg" alt="" width="400">
+                    <h1 class="service-title">
+                        Who we've worked with
+                    </h1>
+                    </div>
+
+                    <div class="companies">
+                        <!-- sentinel -->
+                        <div class="company">
+                           <a href="https://sentinelafrica.co.ke/" target="_blank">
+                            <img src="/sentinel.021a4396.jpg" alt="" class="company-logo">
+                           </a>
+                            <h2>Sentinel Africa Consulting</h2>
+
+                            <quote>
+                                "Macmatec has been a great partner for us. They have been able to deliver on time and
+                                with high quality. We are very happy with the work they have done for us and we look
+                                forward to working with them in the future."
+                            </quote>
+                        </div>
+
+                        <!-- Rodela -->
+                        <div class="company">
+                            <a href="https://rodela.info" target="_blank">
+                                <img src="/Rodela-Crest-Color.ca5f85e1.svg" alt="" class="company-logo">
+                            </a>
+                            <h2>Rodela</h2>
+
+                            <quote>
+                                "We were looking for a team that could help us build a web application that would stand out 
+                                from the rest and be easy to use. Macmatec was able to deliver on time and with high quality.
+                                "
+                            </quote>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+
+            
         </main>
     </div>
     <footer>
         <div class="footer-company">
+
+            <h2 class="title">Socials</h2>
+            <p class="learn">Learn more by following us: </p>
+            <div class="row socials">
+                <a href="https://twitter.com/MacmatecI" target="_blank" class="col2">
+                    
+                    <img src="/twitter.0ec656a6.svg" alt="" class="instagram icon">
+                    <p class="skillform">Macmatec</p>
+                </a>
+
+                <!-- instagram -->
+
+                <a href="https://www.instagram.com/macmatec.io/" target="_blank" class="col2">
+                    <img src="/instagram.e5f31372.png" alt="" class="instagram icon">
+                    <p class="skillform">Macmatec</p>
+                </a>
+
+                <!-- linkedIn -->
+                <a href="https://www.linkedin.com/company/macmatec-ltd/" target="_blank" class="col2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/800px-LinkedIn_icon_circle.svg.png" alt="" class="linkedin icon">
+                    <p class="skillform">Macmatec</p>
+                </a>
+                            
+            </div>
+            
             <svg class="angle-line" width="18" height="20" viewbox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3536 16.3536C17.5488 16.1583 17.5488 15.8417 17.3536 15.6464L14.1716 12.4645C13.9763 12.2692 13.6597 12.2692 13.4645 12.4645C13.2692 12.6597 13.2692 12.9763 13.4645 13.1716L16.2929 16L13.4645 18.8284C13.2692 19.0237 13.2692 19.3403 13.4645 19.5355C13.6597 19.7308 13.9763 19.7308 14.1716 19.5355L17.3536 16.3536ZM0 16.5H17V15.5H0V16.5Z" fill="black"></path>
                 <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="16" stroke="black"></line>
             </svg>
-            <p class="all">Macmatec Ltd. Co.</p>
+            <p class="all">Macmatec Co. Ltd.</p>
+            <p class="all">All rights reserved</p>
+            <!-- copyrigth -->
+            <p>© 2023 Macmatec Co. Ltd. All rights reserved.</p>
+            
+        </div>
+
+        <div class="footer-links">
+            <h2 class="title">Quick links</h2>
+            <ul class="links">
+                <!-- career.html -->
+                <li class="link">
+                    <a href="/career.html">Careers</a>
+                </li>
+
+                <!-- projects.html -->
+                <li class="link">
+                    <a href="/projects.html">Projects</a>
+                </li>
+            </ul>
         </div>
         <div class="footer-contact">
-            <p class="learn">Learn more by following us: </p>
-            <a href="https://twitter.com/MacmatecI" target="_blank" class="col2">
-                <svg class="twitter" viewbox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 2.75C11.3695 2.75 2.75 11.3695 2.75 22C2.75 32.6305 11.3695 41.25 22 41.25C32.6305 41.25 41.25 32.6305 41.25 22C41.25 11.3695 32.6305 2.75 22 2.75ZM31.2512 17.2605C31.2641 17.4625 31.2641 17.673 31.2641 17.8793C31.2641 24.1871 26.4602 31.4531 17.6816 31.4531C14.9746 31.4531 12.4652 30.6668 10.3512 29.3133C10.7379 29.3563 11.1074 29.3734 11.5027 29.3734C13.7371 29.3734 15.791 28.6172 17.4281 27.3367C15.3313 27.2938 13.5695 25.9188 12.968 24.0281C13.7027 24.1355 14.3645 24.1355 15.1207 23.9422C14.041 23.7228 13.0706 23.1364 12.3742 22.2827C11.6779 21.4289 11.2986 20.3603 11.3008 19.2586V19.1984C11.9324 19.5551 12.6758 19.7742 13.4535 19.8043C12.7997 19.3686 12.2635 18.7782 11.8925 18.0857C11.5215 17.3931 11.3271 16.6197 11.3266 15.834C11.3266 14.9445 11.5586 14.1324 11.9754 13.4277C13.1738 14.903 14.6692 16.1096 16.3645 16.9691C18.0598 17.8285 19.9169 18.3217 21.8152 18.4164C21.1406 15.1723 23.5641 12.5469 26.4773 12.5469C27.8523 12.5469 29.0898 13.1227 29.9621 14.0508C31.0406 13.8488 32.0719 13.4449 32.9914 12.9035C32.6348 14.0078 31.8871 14.9402 30.8945 15.5289C31.857 15.4258 32.7852 15.1594 33.6445 14.7855C32.9957 15.7395 32.1836 16.5859 31.2512 17.2605V17.2605Z" fill="#191919"></path>
-                </svg>
-                <p class="skillform">Macmatec</p>
-            </a>
+
+            <h2 class="title">Contact us</h2>
+            <p class="contact">
+                <a href="mailto:info@macmatec.io">
+                    Send us an email at info@macmatec.io
+                </a>
+            </p>
+
+            <p class="contact">
+                <a href="tel:+233 24 000 0000">
+                    Call us on +233 24 000 0000
+                </a>
+            </p>
+
+            <p class="contact">
+                <a href="https://goo.gl/maps/zRL4j1W3k1qKuu8Z9" target="_blank" class="maps">
+                    Find us on Google Maps
+                </a>
+            </p>
+
+
+
+            <form class="feedback-form">
+                <img src="/email.f6cb6cdf.png" alt="" class="form-icon icon">
+                <h2 class="title">Send us a message</h2>
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required="">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message" required=""></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send</button>
+
+            </form>
+
+            
+            
         </div>
     </footer>
-<script src="/Website.59712999.js"></script></body>
+<script src="/official-website.59712999.js"></script></body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js" integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/index.8f0c9192.js"></script>
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", function() {
+    window.setTimeout(document.querySelector("svg").classList.add("animated"), 1000);
+});
+
+</script>
 
 </html>

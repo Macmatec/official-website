@@ -1,7 +1,7 @@
 let tl = gsap.timeline({
     defaults: {
         ease: "power4.inOut",
-        duration: 2
+        duration: 0.5
     }
 });
 let dots = CSSRulePlugin.getRule(".card:before");
@@ -35,5 +35,14 @@ tl.to(".hero-tag", {
 }, "-=1").to("footer", {
     opacity: 1
 }, "-=2");
+function scrollToEnd() {
+    console.log("scrolling to end");
+    // scroll to the end of the page
+    window.scrollTo({
+        top: document.body.scrollHeight - window.innerHeight,
+        left: 0,
+        behavior: "smooth"
+    });
+}
 
 //# sourceMappingURL=index.8f0c9192.js.map

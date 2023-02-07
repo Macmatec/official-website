@@ -1,7 +1,7 @@
 let tl = gsap.timeline({
     defaults: {
         ease: "power4.inOut",
-        duration: 2
+        duration: 0.5
     }
 });
 
@@ -44,3 +44,14 @@ tl.to('.hero-tag', {
     .to('footer', {
         opacity: 1
     }, "-=2")
+
+function scrollToEnd() {
+    console.log('scrolling to end');
+
+    // scroll to the end of the page
+    window.scrollTo({
+        top: document.body.scrollHeight - window.innerHeight,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
